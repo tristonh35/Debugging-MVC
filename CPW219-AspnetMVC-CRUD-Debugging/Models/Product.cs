@@ -5,16 +5,16 @@ namespace CPW219_AspnetMVC_CRUD_Debugging.Models
     public class Product
     {
         [Key]
-        public int ProductId { get; set; }
+        public int ProductId { get; set; } 
 
         [Required]
         [StringLength(35)]
-        public string Name { get; set; }
+        public string Name { get; set; } 
 
         [DataType(DataType.Currency)]
-        public double Price { get; set; }
+        public double Price { get; set; } 
 
         [Required]
-        public string Description { get; set; } = null!; // Added "null!" to ignore compiler warning
+        public string? Description { get; set; }
     }
 }

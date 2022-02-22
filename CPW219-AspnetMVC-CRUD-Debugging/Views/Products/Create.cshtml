@@ -1,6 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Create";
 }
+
+@if (ViewData["Message"] != null)
+{
+    <h1>@ViewData["Message"]</h1>;
+}
 @model Product
 <h1>Create</h1>
 
